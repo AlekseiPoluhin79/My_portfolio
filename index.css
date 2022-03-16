@@ -1,58 +1,64 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: pink;
-    margin: 0;
-}
-
-#head {
-    background-color: #2b0477;
-    height: 70px;
-    color: aliceblue;
-}
-
-#wrapper {
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#left {
-    display: flex;
-    align-items: center;
-}
-
-#logo {
-    font-size: 40px;
-    font-weight: 700;
-    text-decoration: none;
-    color: inherit;
-    margin-right: 40px;
-}
-
-#leftItem {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-}
-
-span {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-
-/*  
+            html {
+                box-sizing: border-box;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+            
+            body {
+                height: 100vh;
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                overflow-x: hidden;
+            }
+            /* 
+"это стили для header
+*/
+            
+            .header {
+                width: 100%;
+                height: 70px;
+                background-color: #2b0477;
+                color: aliceblue;
+                position: fixed;
+                top: 0;
+                z-index: 2;
+            }
+            
+            #wrapper {
+                padding: 10px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            #left {
+                display: flex;
+                align-items: center;
+            }
+            
+            #logo {
+                font-size: 40px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 40px;
+            }
+            
+            #leftItem {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+            }
+            
+            span {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            /*  
 это старая версия меню
 #burger {
     width: 40px;
@@ -80,9 +86,7 @@ span {
     margin-bottom: 0;
 }
 */
-
-
-/*
+            /*
 #right {
     width: 32px;
     height: 25px;
@@ -109,31 +113,21 @@ span {
 /* 
 здесь будем стили меню
 */
-
-
-/* скрываем чекбокс */
-
-
-/*
+            /* скрываем чекбокс */
+            /*
 #menu__toggle {
     opacity: 0;
 }
 
 
 /* стилизуем кнопку */
-
-
-/*
+            /*
 .menu__btn {
     display: flex;
     /* используем flex для центрирования содержимого */
-
-
-/*   align-items: center;
+            /*   align-items: center;
     /* центрируем содержимое кнопки */
-
-
-/*   position: fixed;
+            /*   position: fixed;
     top: 20px;
     left: 20px;
     width: 26px;
@@ -144,9 +138,7 @@ span {
 
 
 /* добавляем "гамбургер" */
-
-
-/*
+            /*
 .menu__btn>span,
 .menu__btn>span::before,
 .menu__btn>span::after {
@@ -169,9 +161,7 @@ span {
 
 
 /* контейнер меню */
-
-
-/*
+            /*
 .menu__box {
     display: block;
     position: fixed;
@@ -190,9 +180,7 @@ span {
 
 
 /* элементы меню */
-
-
-/*
+            /*
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -239,3 +227,48 @@ span {
 .menu__item {
     transition-duration: .25s;
 }
+
+/* 
+Здесь стили для section
+*/
+            
+            .sections {
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: aqua;
+                position: relative;
+                top: 70px;
+                overflow-y: scroll;
+                scroll-snap-type: y mandatory;
+                scrollbar-width: none;
+            }
+            /* 
+здесь стили для intro
+*/
+            
+            .intro {
+                width: 100%;
+                height: calc(100vh - 70px);
+                scroll-snap-align: start;
+                background-color: brown;
+            }
+            /* 
+здесь стили для portfolio
+*/
+            
+            .portfolio {
+                width: 100%;
+                height: calc(100vh - 70px);
+                scroll-snap-align: start;
+                background-color: blueviolet;
+            }
+            /* 
+здесь стили для  contact
+*/
+            
+            .contact {
+                width: 100%;
+                height: calc(100vh - 70px);
+                scroll-snap-align: start;
+                background-color: chartreuse;
+            }
