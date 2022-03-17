@@ -250,7 +250,67 @@ span {
                 width: 100%;
                 height: calc(100vh - 70px);
                 scroll-snap-align: start;
-                background-color: brown;
+                background-color: white;
+                display: flex;
+            }
+            
+            .intro_left {
+                flex: 0.5;
+                overflow: hidden;
+            }
+            
+            .intro_left_imgContainer {
+                width: 800px;
+                height: 800px;
+                background-color: crimson;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                float: right;
+            }
+            
+            img {
+                height: 100%;
+            }
+            
+            .intro_right {
+                flex: 0.5;
+                position: relative;
+            }
+            
+            .intro_right_wrapper {
+                width: 100%;
+                height: 100%;
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            h1 {
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            
+            h2 {
+                font-size: 35px;
+                margin: 10px 0;
+            }
+            
+            h3 {
+                font-size: 30px;
+                margin: 10px 0;
+            }
+            
+            .intro_right_wrapper_a {
+                position: absolute;
+                bottom: 10px;
+                left: 40%;
+            }
+            
+            .arrow {
+                width: 30px;
             }
             /* 
 здесь стили для portfolio
